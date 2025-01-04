@@ -1,8 +1,8 @@
 package com.heribertojuarezjaimes.classes;
 
-public class MultiThreadThing extends Thread {
+public class MultiThreadThing implements Runnable {
 
-    private int threadNumber;
+    private final int threadNumber;
 
     public MultiThreadThing(int threadNumber){
         this.threadNumber = threadNumber;
